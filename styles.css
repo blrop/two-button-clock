@@ -1,0 +1,55 @@
+@font-face {
+    /* Font by Sizenko Alexander (Style-7) http://www.styleseven.com created on October 7 2008 */
+    font-family: 'digital-7';
+    src: url('digital-7-mono.ttf');
+}
+
+:root {
+    --main-bg-color: #95c7a1;
+    --main-color: #1a2e1e;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+html, body {
+    background: var(--main-bg-color);
+    color: var(--main-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    font-family: 'digital-7', monospace;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 150px;
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.buttons__item {
+    font-size: 40px;
+    padding: 10px 25px;
+    border: none;
+    background: #3a6442;
+    color: var(--main-color);
+    box-shadow: 4px 4px 0 0 #101c12;
+}
+
+.buttons__item:active {
+    position: relative;
+    left: 2px;
+    top: 2px;
+    box-shadow:  2px 2px 0 0 #101c12;
+}
